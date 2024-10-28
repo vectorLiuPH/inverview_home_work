@@ -46,7 +46,7 @@ class NineDayForecastActions(BaseActions):
         days_weather_info = []
         for i in range(1, 10):
             wi = WeatherInfo(
-                (datetime.strptime(FND[f'Day{i}ForecastDate']['Value_Eng'], '%Y%m%d').strftime('%-d %b'),datetime.strptime(FND[f'Day{i}ForecastDate']['Value_Eng'], '%Y%m%d').strftime('%m月%d日')),
+                (datetime.strptime(FND[f'Day{i}ForecastDate']['Value_Eng'], '%Y%m%d').strftime('%#d %b'),datetime.strptime(FND[f'Day{i}ForecastDate']['Value_Eng'], '%Y%m%d').strftime('%m月%d日')),
                 (f'({datetime.strptime(FND[f'Day{i}ForecastDate']['Value_Eng'], '%Y%m%d').strftime('%a')})',f'({week_map[datetime.strptime(FND[f'Day{i}ForecastDate']['Value_Eng'], '%Y%m%d').strftime('%a')]})'),
                 f'{FND[f'Day{i}MinTemp']['Value_Eng']} - {FND[f'Day{i}MaxTemp']['Value_Eng']}°C',
                 f'{FND[f'Day{i}MinRH']['Value_Eng']} - {FND[f'Day{i}MaxRH']['Value_Eng']}%',

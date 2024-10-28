@@ -25,7 +25,7 @@ def init_appium_driver(my_opt):
         appActivity='.AgreementPage',
         language='en',
         locale='US',
-        noReset=False
+        noReset=my_opt
     )
     appium_server_url = 'http://localhost:4723'
     driver = webdriver.Remote(appium_server_url, options=UiAutomator2Options().load_capabilities(capabilities))
@@ -36,16 +36,19 @@ def init_appium_driver(my_opt):
 
 @pytest.fixture(scope="function")
 def init_with_dealing_dialog(init_appium_driver):
+    home_page_actions = HomePageActions(init_appium_driver)
     if not init_appium_driver.capabilities['noReset']:
         pa = PreActions(init_appium_driver)
-        home_page_actions = HomePageActions(init_appium_driver)
         pa.deal_with_disclaimer()
         pa.deal_with_PPS()
         pa.deal_with_send_notifications_dialog()
         pa.deal_with_access_location_dialog()
         pa.deal_with_access_location_info()
         pa.deal_with_allow_access_location_info()
-        init_appium_driver.implicitly_wait(5)
+        init_appium_driver.implicitly_wait(10)
         home_page_actions.close_background_image()
         pa.select_english_language()
+    else:
+        init_appium_driver.implicitly_wait(10)
+        home_page_actions.close_background_image()
     yield init_appium_driver

@@ -5,33 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108b81cf-06a1-46d6-af02-faad6b4dd0cd" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MyObservatoryAutomationTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/apis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/base_actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/homePage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/homePage/actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/homePage/locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigator/forecastWarningServices/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigator/forecastWarningServices/nineDayForecast/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigator/forecastWarningServices/nineDayForecast/actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigator/forecastWarningServices/nineDayForecast/locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/pre_actions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/pre_actions/actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/pre_actions/locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testcases/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testcases/test_9_day_forecast.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/base_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/base_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/navigator/forecastWarningServices/nineDayForecast/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/navigator/forecastWarningServices/nineDayForecast/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/test_9_day_forecast.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/test_9_day_forecast.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

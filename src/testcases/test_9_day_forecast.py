@@ -11,6 +11,7 @@ def open_9_day_forecast(init_with_dealing_dialog):
     home_page_actions.open_forecast_warning_services()
     nine_day_forecast_actions = NineDayForecastActions(init_with_dealing_dialog)
     nine_day_forecast_actions.open_nine_days_forecast()
+    init_with_dealing_dialog.implicitly_wait(10)
     yield init_with_dealing_dialog, nine_day_forecast_actions
 
 
