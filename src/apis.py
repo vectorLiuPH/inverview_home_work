@@ -21,6 +21,11 @@ def call_FND_json():
     resp = requests.get(url)
     return resp.json()
 
+@api_exception_handler
+def call_ocf_data_hko_v2():
+    url='https://pda.weather.gov.hk/locspc/data/ocf_data/HKO.v2.xml'
+    resp=requests.get(url)
+    return resp
 
 if __name__ == '__main__':
     call_FND_json()

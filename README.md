@@ -14,14 +14,17 @@ Test cases:
 ├── README.md
 ├── src
    ├── testcases
-   │     ├── test_xxx.py    # test cases depend on test steps 
+   │     ├── test_9_day_forecast.py    # test cases depend on test steps for 9-day-forecast.
+                     └── test_apis.py              # test case for checking 9-day-forecast`s api request successful. 
    └── pages
          └── xxxpage
                └── locators.py    # page objects
                └── actions.py     # every test step`s code implement
           ├── api.py                    # calling api
           ├── tools.py                  # tools functions
-          └── conftest.py               
+          └── conftest.py
+└──task2.py                             # extract humidity on the day after tommorow
+                         
 ```
 
 # 3. How to use
